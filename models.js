@@ -1,10 +1,14 @@
-var mongoose = require('mongoose');  
-var Schema = new mongoose.Schema({  
-  name: String,
-  company: String
-});
+conn = new Mongo();
+db = conn.getDB("mydb");
 
-var People = mongoose.model('People', Schema);  
-
-mongoose.connect('mongodb://localhost/datastore'); 
-console.log("things worked!");
+print("Got connection");
+j = { name : "Eric Schles"}
+k = { company : "Syncano" }
+l = { namez : ["Shaque","Aaron","Anna"]}
+db.testData.insert( j );
+db.testData.insert( k );
+db.ice_cream.insert( l );
+var c = db.testData.find();
+var d = db.ice_cream.find();
+while( c.hasNext() ) printjson( c.next() )
+while( d.hasNext() ) printjson( d.next() )
