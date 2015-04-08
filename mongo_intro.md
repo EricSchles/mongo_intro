@@ -85,8 +85,11 @@ This opens up the mongo REPL, which allows you to type in small pieces of code (
 Once you've done the above you should be able to enter commands that will be useful for querying against your datastores.  The mongo shell comes with a bunch of very useful commands for interacting with your data:
 
 `db` - print the name of the current database
+
 `show dbs` - list all the databases
+
 `use [name of database]` - switches to a different database, if the database doesn't already exist, it is created.
+
 `help` - prints a number of help options for learning mongo, in mongo.
 
 
