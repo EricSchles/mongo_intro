@@ -170,6 +170,7 @@ Rather than going through basic mongo connections, we'll be making use of mongoo
 ###Installation:
 
 sudo npm install express
+
 sudo npm install mongoose
 
 Testing out mongoose:
