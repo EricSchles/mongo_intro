@@ -2,6 +2,37 @@
 
 MongoDB is a NoSQL database, written to work well with several languages.  It allows you to add data via JSON and then store said data, after the life of the program.
 
+#Understanding JSON
+
+JSON stands for JavaScript Object Notation.  While originally written for JavaScript, JSON works with most modern languages.  
+
+Basic example:
+
+`x = { key : "value" }`
+
+Here the value on the left serves as the key and the value on the right serves as the value.  In most languages to access values, you simply do the following, to access the values:
+
+Specific example:
+
+`y = {"name":"Eric"}`
+
+
+`print y["name"]`
+
+This will print the value, "Eric"
+
+You can also store lists as the values like so:
+
+`x = { key: ["value1,"value2"]}`
+
+For a specific example:
+
+`y = { "names":["Eric","Aaron","James"] } `
+
+`print y["names"][0]`
+
+This will print the value, "Eric"
+
 #Understanding MongoDB
 
 MongoDB is a database for persistently storing data, without SQL.  This type of data store is typically referred to as NoSQL.  SQL standing for Structured Query Language.  So what does it mean for a database to be not-SQL?  Typically it means 
