@@ -234,9 +234,13 @@ index.html:
 <head></head>
 <body>
 
+<p>Printing out the full object</p>
+{{people}}
+
+<p>Printing out components of each object</p>
 {{#each people}}
 <p>{{name}}</p>
-<p>{{company}}
+<p>{{company}}</p>
 {{/each}}
 </body>
 </html>
