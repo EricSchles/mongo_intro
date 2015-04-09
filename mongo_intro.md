@@ -185,10 +185,6 @@ mongoose.model('Info', Schema);
 var People = mongoose.model('People', Schema);  
 var person = new People({name:"Eric",company:"Syncano"}).save();
 mongoose.connect('mongodb://localhost/datastore'); 
-
-mongoose.connect('mongodb://localhost/datastore'); 
-
-
 console.log("things worked!");
 ```
 
